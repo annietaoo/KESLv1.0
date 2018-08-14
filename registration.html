@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="aesl.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="registration.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/vue@2.3.4"></script>
+</head>
+<body class="aesl-registration-main">
+<div class="aesl-registration">
+    <div class="aesl-registration-left-container">
+        <div class="aesl-title">Kaizen</div>
+        <div class="aesl-subtitle">eSports League</div>
+    </div>
+    <div class="aesl-registration-right-container">
+        <div class="inner-container">
+            <form name="registration-info" id="reg-info">
+                <div class="content1">
+                    <div class="aesl-registration-right-container-header">
+                        <div class="aesl-reg-step-title">CREATE AN ACCOUNT</div>
+                        <div class="aesl-reg-step-subtitle">Step 1 of 2</div>
+                    </div>
+                    <div class="aesl-registration-webforms">
+                        <div class="reg-form">
+                            <fieldset class="basic-info">
+                                <label for="email" id="email-label">EMAIL</label>
+                                <input type="email" id="email-address" name="email-address">
+                                <span class="error" id="invalid-email">Invalid Email Address</span><br>
+                                <label for="first-name" id="fname-label">FIRST NAME</label>
+                                <input type="text" id="first-name" name="first-name">
+                                <span class="error" id="fname-req">First Name Required</span><br>
+                                <label for="last-name" id="lname-label">LAST NAME</label>
+                                <input type="text" id="last-name" name="last-name">
+                                <span class="error" id="lname-req">Last Name Required</span>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <a href="#" id="next"><div class="aesl-next-button button">NEXT</div></a>
+                    <div class="aesl-registration-right-container-footer">
+                          <div class="aesl-footnote-text">Already have an account? <a href="www.google.com"><span class="white">Login</span></a></div>
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="aesl-registration-right-container-header">
+                        <div class="aesl-reg-step-title">CREATE AN ACCOUNT</div>
+                        <div class="aesl-reg-step-subtitle">Step 2 of 2</div>
+                    </div>
+                    <div class="aesl-registration-webforms">
+                        <div class="reg-form">
+                            <fieldset class="basic-info">
+                                <label for="username" id="user-label">USERNAME</label>
+                                <input type="text" id="username" name="username">
+                                <span class="error" id="invalid-user">Invalid Username</span>
+                                <label for="psw" id="psw1-label">PASSWORD</label>
+                                <input type="password" id="psw1" name="psw">
+                                <span class="error" id="invalid-psw">Invalid Password</span>
+                                <label for="psw" id="psw2-label">VERIFY PASSWORD</label>
+                                <input type="password" id="psw2" name="psw">
+                                <span class="error" id="psw-dnm">Passwords Do Not Match</span>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                                <a href="#" id="back"><div class="aesl-back-button">BACK</div></a>
+                                <a href="#" id="submit"><div class="aesl-submit-button button">SUBMIT</div></a>
+                    </div>
+                    <div class="aesl-registration-right-container-footer">
+                          <div class="aesl-footnote-text">Already have an account? <a href="#"><span class="white">Login</span></a></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>

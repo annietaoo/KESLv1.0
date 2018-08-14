@@ -1,0 +1,749 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif !important;
+  margin: 0;
+    background-color: #111;
+}
+
+/****** HOMEPAGE ******/
+
+img {
+    box-shadow: 0px 4px 30px 4px rgba(3, 4, 4, 0.3);
+}
+
+.aesl-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.aesl-body {
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+/* header padding */
+.aesl-header, .aesl-social-media-header {
+    padding: 0 7%;
+}
+
+/**** MAIN HEADER START ****/
+.aesl-header {
+    position: relative;
+    background-color: #414141;
+    color: white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.aesl-header-title {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.aesl-header-buttons {
+    display: table;
+    float: right;
+    vertical-align: center;
+}
+
+.aesl-header-login-button, .aesl-header-signup-button {
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.aesl-header-login-button {
+    color: white;
+    margin-right: 10px;
+}
+
+.aesl-header-signup-button.button {
+    display: inline-block;
+    color: #1d1e20;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.aesl-hamburger-button {
+    display: none;
+}
+
+@media only screen and (max-width : 1024px){    
+    .aesl-header {
+        padding: 0 3%;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .aesl-header-login-button, .aesl-header-signup-button, .aesl-header-signup-button.button {
+        display: none;
+    }
+
+    .aesl-hamburger-button {
+        display: inline-block;
+        float: right;
+        vertical-align: center;
+    }
+    .aesl-hamburger-button img{    
+        width: 75px;
+        height: 75px;
+        margin-right: -5px;
+        margin-top: -25px;
+        margin-bottom: -10px;
+        box-shadow: none;
+    }
+
+    .aesl-header-title {
+        display: inline-block;
+        font-size: 16px;
+    }
+    
+    .aesl-hamburger-button img{    
+        width: 55px;
+        height: 55px;
+        margin-right: -5px;
+        margin-top: -20px;
+        margin-bottom: -10px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width : 380px) {
+    .aesl-header-title {
+        display: inline-block;
+        font-size: 14px;
+    }
+    
+    .aesl-hamburger-button img{    
+        width: 55px;
+        height: 55px;
+        margin-right: -5px;
+        margin-top: -20px;
+        margin-bottom: -10px;
+    }
+}
+/**** MAIN HEADER END ****/
+
+
+/**** SOCIAL MEDIA HEADER START ****/
+.aesl-social-media-header {
+    position: relative;
+    background-color: #333;
+    color: #666;
+    height: 30px;
+    font-size: 12px;
+}
+
+.aesl-twitter, .aesl-social-media {
+  margin-top: 8px;
+}
+
+.aesl-twitter {
+  display: inline-block;
+  float: left;
+}
+
+.aesl-social-media {
+  display: inline-block;
+  float: right;
+}
+
+@media only screen and (max-width : 1024px) {
+    .aesl-social-media-header {
+        padding: 0 3%;
+    }
+
+    .aesl-social-media {
+        right: 3%;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .aesl-social-media-header {
+        display: none;
+    }
+}
+/**** SOCIAL MEDIA HEADER END ****/
+
+/**** PROMO START ****/
+.aesl-main-promo-top-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background-image: url("Assets/hero-bg.png");
+    background-size: cover;
+    background-position-x: center;
+}
+
+.aesl-main-promo-top {
+    margin: 180px auto 250px;
+    color: white;
+}
+
+.aesl-main-promo-bottom-container {
+    display: inline-block;
+    width: 100%;
+    background-color: #ea4135;
+}
+
+.aesl-main-promo-bottom {
+    margin: 230px auto 100px;
+    color: white;
+}
+
+.aesl-main-promo-image {
+    position: absolute;
+    bottom: -225px;
+    left: 50%;
+    margin-left: -450px;
+}
+
+.aesl-main-promo-top div, .aesl-main-promo-bottom div {
+    max-width: 600px;
+}
+
+@media only screen and (min-width: 1025px) {
+    .aesl-main-promo-top, .aesl-main-promo-bottom, .aesl-main-promo-image img {
+        max-width: 900px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .aesl-main-promo-top {
+        margin: 0 auto;
+        padding: 100px 50px;
+        text-align: center;
+        background-image: url(Assets/hero-bg.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .aesl-main-promo-top .body-subtitle {
+        margin-bottom: 0;
+    }
+    
+    .aesl-main-promo-bottom{
+        margin: 80px 5% 80px;
+    }
+
+    .aesl-main-promo-top div {
+        max-width: 100%;
+    }
+
+    .aesl-main-promo-bottom div {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .body-title {
+        line-height: 80%;
+        
+    }
+    .aesl-main-promo-top-container {
+        display: block;
+        background-size: 55%;
+        background-position: center;
+    }
+    
+    .aesl-main-promo-top, .aesl-main-promo-bottom, .aesl-main-promo-image img {
+        max-width: 100%;
+    }
+    .aesl-main-promo-image {
+        display: block;
+        position: initial;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .aesl-main-promo-image img {
+        display: block;
+        width: 100%;
+    }
+
+}
+/**** PROMO END ****/
+
+
+/**** CARDS START ****/
+.aesl-card {
+    position: relative;
+    margin: 80px 7%;
+}
+
+.aesl-card .aesl-card-image img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1025px) {
+    .aesl-card:nth-child(odd) .aesl-card-image {
+        display: inline-block;
+        width: 45%;
+    }
+    
+    .aesl-card:nth-child(even) .aesl-card-image {
+        width: 45%;
+        margin-right: 0;
+        margin-left: auto;
+    }
+    
+    .aesl-card:nth-child(odd) .aesl-card-text {
+        position: absolute;
+        right: 0;
+        width: 50%;
+    }
+    
+    .aesl-card:nth-child(even) .aesl-card-text {
+        position: absolute;
+        left: 0;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width : 1024px){
+    .aesl-card {
+        margin: 40px 7%;
+    }
+
+    .aesl-card .aesl-card-image {
+        display: block;
+        width: 100%;
+    }
+
+    .aesl-card .aesl-card-text.vertical-center-align {
+        display: block;
+        width: 100%;
+        position: relative;
+        padding-top: 20px;
+        top: 0;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}
+/**** CARDS END ****/
+
+
+/**** SIGNUP START ****/
+.aesl-signup-section {
+    padding: 60px 0 30px;
+    background-image: url("Assets/footer-bg.png");
+    text-align: center;
+}
+
+.aesl-signup-title, .aesl-signup-subtitle, .aesl-signup-button {
+    color: white;
+}
+
+.aesl-signup-button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #691b18;
+    border-radius: 5px;
+    color: white;
+}
+
+.aesl-signup-button:hover, .aesl-signup-button:active {
+    background-color: #6a3c39;
+}
+
+@media only screen and (min-width : 580px) and (max-width : 1024px){
+    .aesl-signup-section {
+        padding: 100px 0 100px;
+        background-image: url("Assets/footer-bg.png");
+        text-align: center;
+    }
+    
+    .aesl-signup-button {
+        display: inline-block;
+        padding: 10px 200px;
+        background-color: #691b18;
+        border-radius: 5px;
+        color: white;
+    }
+}
+
+@media only screen and (max-width : 579px) {
+    .aesl-signup-section {
+        padding: 100px 0 100px;
+        background-image: url("Assets/footer-bg.png");
+        text-align: center;
+    }
+    
+    .aesl-signup-button {
+        display: inline-block;
+        padding: 10px 100px;
+        background-color: #691b18;
+        border-radius: 5px;
+        color: white;
+    }
+}
+/**** SIGNUP END ****/
+
+
+/**** FOOTER START ****/
+.aesl-footer-left {
+    display: inline-block;
+}
+
+.aesl-footer-right {
+    float: right;
+    text-align: right;
+}
+
+@media only screen and (max-width : 1024px) {
+    .aesl-footer-left, .aesl-footer-right {
+        color: rgba(171, 171, 172, 1);
+    }
+    
+    .aesl-footer-left span {
+        color: rgba(171, 171, 172, 1);
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width : 379px) {
+    .aesl-footer-left, .aesl-footer-right {
+        font-size: 12px;
+    }
+    
+}
+/**** FOOTER END ****/
+
+/**** UTILITY CLASSES ****/
+
+.vertical-center-align {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.body-title {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.body-subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.body-text {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media only screen and (min-width : 580px) and (max-width : 1024px) {
+    .body-title {
+        font-size: 55px;
+        font-weight: bold;
+    }
+    
+    .body-subtitle {
+        font-size: 22px;
+        margin: 10px 0 20px;
+    }
+    
+    .body-text {
+        font-family: 'Open Sans', sans-serif !important;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .body-title {
+        font-size: 32px;
+        font-weight: bold;
+    }
+    
+    .body-subtitle {
+        font-size: 17px;
+        margin: 10px 0 20px;
+    }
+    
+    .body-text {
+        font-family: 'Open Sans', sans-serif !important;
+        font-size: 13px;
+        line-height: 24px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width : 379px) {
+    .body-title {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    
+    .body-subtitle {
+        font-size: 16px;
+        margin: 10px 0 20px;
+    }
+    
+    .body-text {
+        font-family: 'Open Sans', sans-serif !important;
+        font-size: 13px;
+        line-height: 24px;
+    }
+}
+/**** UTILITY CLASSES END ****/
+
+
+/****** ACCOUNT REGISTRATION ******/
+
+.aesl-registration-main {
+    background: url("Assets/hero-bg.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.aesl-registration {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.95;
+    box-shadow: 0px 4px 31px 4px rgba(3,4,4,0.44);
+}
+
+/**** TITLE PANEL ****/
+
+.aesl-registration-left-container {
+    display: block;
+    float: left;
+    background-color: rgba(35,36,38,1);
+    width: 230px;
+    height: 450px;
+    text-align: center;
+}
+
+.aesl-title {
+    font-size: 60px;
+    color: #ea4135;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-bottom: -15px;
+}
+
+.aesl-subtitle {
+    font-size: 20px;
+    color: #ffffff;
+    
+}
+
+/**** TITLE PANEL END ****/
+
+/**** WEBFORMS ****/
+
+.aesl-registration-right-container {
+    display: block;
+    float: right;
+    background-color: rgba(53,54,56,1);
+    width: 370px;
+    height: 450px;
+    overflow: hidden;*
+}
+
+.inner-container {
+    width: 740px;
+}
+
+.content1 {
+    width: 370px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    float: left;
+  
+}
+
+.content2 {
+    width: 370px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    float: right;
+}
+
+.aesl-registration-right-container-header {
+    text-align: center;
+    padding: 30px;
+}
+
+.aesl-reg-step-title {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.aesl-reg-step-subtitle {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: -25px;
+}
+
+.aesl-registration-webforms {
+    display: block;
+    margin-left: 50px;
+}
+
+.reg-form {
+    overflow: hidden;
+    width: 260px;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    font-size: 16px !important;
+    font-weight: regular;
+    color: rgba(255, 255, 255, 0.5) !important;
+    background-color: rgba(53,54,56,1);
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 2px;
+    width: 100%;
+    margin: 0;
+}
+
+input:focus {
+    font-size: 16px !important;
+    font-weight: regular;
+    color: #ffffff !important;
+    background-color: rgba(53,54,56,1);
+    border: none;
+    border-bottom: 1px solid white !important;
+    padding: 2px;
+    width: 100%;
+    margin: 0;
+    outline: 0;
+}
+
+label {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.error {
+    display: none;
+    position: absolute;
+    padding: 2px 0px 0px 3px;
+    color: #ea4135;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: -3px;
+}
+
+
+.aesl-next-button {
+    display: block;
+    padding: 15px 30px;
+    width: 260px;
+    height: 50px;
+    background-color: #ea4135;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.button-container {
+    display: block;
+    width: 310px;
+    height: 80px;   
+}
+
+.aesl-back-button {
+    float: left;
+    padding: 15px 30px;
+    width: 120px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 30px;
+    border: 1px solid white;
+    
+}
+
+.aesl-submit-button {
+    float: right;
+    padding: 15px 30px;
+    width: 120px;
+    height: 50px;
+    background-color: #ea4135;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+.aesl-registration-right-container-footer {
+    display: block;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.aesl-footnote-text {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+/**** WEBFORM CONTENT END ****/
+
+
+/**** UTILITY CLASSES ****/
+
+.aesl-back-button:active, .aesl-back-button:hover {
+    background-color: rgba(35,36,38,0.5);
+}
+
+.aesl-back-button:active {
+    transform: translateY(5px);
+}
+
+.button {
+    background-color: #ea4135;
+}
+
+.button:hover {
+    background-color: #6a3c39;
+}
+
+.button:active {
+    background-color: #6a3c39;
+    transform: translateY(5px);
+}
+
+.white {
+    color: #ffffff;
+}
+
+.aesl-red {
+    color: #ea4135;
+}
+
+/**** UTILITY CLASSES END ****/

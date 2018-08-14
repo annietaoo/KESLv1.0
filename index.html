@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="aesl.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:400,700" rel="stylesheet">
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/vue@2.3.4"></script>
+</head>
+<body>
+<div class="aesl-body">
+<div class="aesl-header">
+    <div class="aesl-wrapper">
+      <div class="aesl-header-title"><span class="aesl-red">Amateur</span> eSports League</div>
+      <div class="aesl-header-buttons">
+          <a href="#"><div class="aesl-header-login-button">LOGIN</div></a>
+          <a href="./registration.html"><div class="aesl-header-signup-button button">SIGN UP</div></a>
+          <div class="aesl-hamburger-button" alt="">
+              <img src="Assets/nav.png"/>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="aesl-social-media-header">
+  <div class="aesl-wrapper">
+    <div class="aesl-twitter">TWITTER</div>
+    <div class="aesl-social-media">FOLLOW US</div>
+  </div>
+</div>
+
+<div class="aesl-main-promo">
+    <div class="aesl-main-promo-top-container">
+        <div class="aesl-main-promo-top">
+            <div class="body-title">Level UP Your Team</div>
+            <div class="body-subtitle">Easily find the right team members and scrim partners.</div>   
+        </div>
+        <div class="aesl-main-promo-image">
+            <img src="Assets/main-UI-placeholder.png" alt="Amateur Esports League UI"/>
+        </div>
+    </div>
+    <div class="aesl-main-promo-bottom-container">
+        <div class="aesl-main-promo-bottom">
+            <div class="body-title">Who Are We?</div>
+            <div class="body-subtitle">Changing the way eSports teams compete.</div>
+            <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Incidldunt ut labore et dolore magna allqua. Ut enlm ad minlm veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+    </div>
+</div>
+
+<div id="aesl-homepage-cards" class="aesl-cards">
+    <div class="aesl-wrapper">
+    <div class="aesl-card" v-for="card in cards">
+        <div class="aesl-card-image"><img v-bind:src="card.image"/></div>
+        <div class="aesl-card-text vertical-center-align">
+            <div class="body-title">{{ card.title }}</div>
+            <div class="body-subtitle">{{ card.subtitle }}</div>
+            <div class="body-text">{{ card.text }}</div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="aesl-signup-section">
+    <div class="aesl-signup-title body-title">Build Your Team Today</div>
+    <div class="aesl-signup-subtitle body-subtitle">Changing the way eSports teams compete.</div>
+    <a href="./registration.html"><div class="aesl-signup-button button">SIGN UP</div></a>
+</div>
+
+<div class="aesl-footer">
+    <div class="aesl-social-media-header">
+        <div class="aesl-wrapper">
+        <div class="aesl-twitter">TWITTER</div>
+        <div class="aesl-social-media">FOLLOW US</div>
+        </div>
+    </div>
+    <div class="aesl-header">
+      <div class="aesl-wrapper">
+        <div class="aesl-footer-left">
+            <div class="aesl-header-title"><span class="aesl-red">Amateur</span> eSports League</div>
+            <div class="aesl-header-subtitle">Copyright 2017</div>
+        </div>
+        <div class="aesl-footer-right">
+            <div class="aesl-header-title">Get in Touch</div>
+            <div class="aesl-header-subtitle">am.esportsleague@gmail.com</div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
